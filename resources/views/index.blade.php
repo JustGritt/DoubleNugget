@@ -77,7 +77,7 @@
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
                             <a class="nav-link text-body" href="./login2">
-                                Account
+                                Mon compte
                             </a>
                         </li>
                         <!-- /Navbar Login-->
@@ -85,13 +85,13 @@
                         <!-- Navbar Cart Icon-->
                         <li class="ms-1 d-inline-block position-relative dropdown-cart">
                             <button class="nav-link me-0 disable-child-pointer border-0 p-0 bg-transparent text-body" type="button">
-                                Bag (2)
+                                Panier
                             </button>
                             <div class="cart-dropdown dropdown-menu">
 
                                 <!-- Cart Header-->
                                 <div class="d-flex justify-content-between align-items-center border-bottom pt-3 pb-4">
-                                    <h6 class="fw-bolder m-0">Cart Summary (2 items)</h6>
+                                    <h6 class="fw-bolder m-0">Dans le panier (2 produits)</h6>
                                     <i class="ri-close-circle-line text-muted ri-lg cursor-pointer btn-close-cart"></i>
                                 </div>
                                 <!-- / Cart Header-->
@@ -102,36 +102,36 @@
                                     <div class="row mx-0 py-4 g-0 border-bottom">
                                         <div class="col-2 position-relative">
                                             <picture class="d-block ">
-                                                <img class="img-fluid" src="{{asset('images/products/product-cart-1.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                <img class="img-fluid" src="{{asset('images/products/Chicken/product-1.jpg')}}" alt="Product Nugget">
                                             </picture>
                                         </div>
                                         <div class="col-9 offset-1">
                                             <div>
                                                 <h6 class="justify-content-between d-flex align-items-start mb-2">
-                                                    Nike Air VaporMax 2021
+                                                    Poule de Soie
                                                     <i class="ri-close-line ms-3"></i>
                                                 </h6>
-                                                <span class="d-block text-muted fw-bolder text-uppercase fs-9">Size: 9 / Qty: 1</span>
+                                                <span class="d-block text-muted fw-bolder text-uppercase fs-9">Taille: 9 / Quantité: 1</span>
                                             </div>
-                                            <p class="fw-bolder text-end text-muted m-0">$85.00</p>
+                                            <p class="fw-bolder text-end text-muted m-0">86.99 Ξ ETH</p>
                                         </div>
                                     </div>
                                     <!-- Cart Product-->
                                     <div class="row mx-0 py-4 g-0 border-bottom">
                                         <div class="col-2 position-relative">
                                             <picture class="d-block ">
-                                                <img class="img-fluid" src="{{asset('images/products/product-cart-2.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                <img class="img-fluid" src="{{asset('images/products/Chicken/product-2.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                                             </picture>
                                         </div>
                                         <div class="col-9 offset-1">
                                             <div>
                                                 <h6 class="justify-content-between d-flex align-items-start mb-2">
-                                                    Nike ZoomX Vaporfly
+                                                    Coq Padoue
                                                     <i class="ri-close-line ms-3"></i>
                                                 </h6>
-                                                <span class="d-block text-muted fw-bolder text-uppercase fs-9">Size: 11 / Qty: 1</span>
+                                                <span class="d-block text-muted fw-bolder text-uppercase fs-9">Taille: 13 / Quantité: 1</span>
                                             </div>
-                                            <p class="fw-bolder text-end text-muted m-0">$125.00</p>
+                                            <p class="fw-bolder text-end text-muted m-0">126.99 Ξ ETH</p>
                                         </div>
                                     </div>
                                 </div>
@@ -142,14 +142,14 @@
                                     <div class="pt-3">
                                         <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-start mb-4 mb-md-2">
                                             <div>
-                                                <p class="m-0 fw-bold fs-5">Grand Total</p>
-                                                <span class="text-muted small">Inc $45.89 sales tax</span>
+                                                <p class="m-0 fw-bold fs-5">Total</p>
+                                                <span class="text-muted small">Frais de transaction de  36.01 Ξ ETH</span>
                                             </div>
-                                            <p class="m-0 fs-5 fw-bold">$422.99</p>
+                                            <p class="m-0 fs-5 fw-bold">249.99 Ξ ETH</p>
                                         </div>
                                     </div>
-                                    <a href="./cart" class="btn btn-outline-dark w-100 text-center mt-4" role="button">View Cart</a>
-                                    <a href="./checkout" class="btn btn-dark w-100 text-center mt-2" role="button">Proceed To Checkout</a>
+                                    <a href="./cart" class="btn btn-outline-dark w-100 text-center mt-4" role="button">Consulter le panier</a>
+                                    <a href="./checkout" class="btn btn-dark w-100 text-center mt-2" role="button">Passer la commande </a>
                                 </div>
                                 <!-- / Cart Summary-->
                             </div>
