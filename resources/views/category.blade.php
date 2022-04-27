@@ -25,10 +25,12 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Vendor CSS -->
-  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
+
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
+
 
   <!-- Fix for custom scrollbar if JS is disabled-->
   <noscript>
@@ -921,10 +923,8 @@
     </div>
     <!-- Theme JS -->
     <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+    <script src="{{asset('js/theme.bundle.js')}}"></script>
+    <script src="{{asset('js/vendor.bundle.js')}}"></script>
 </body>
 
 </html>

@@ -98,7 +98,7 @@
 
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="./login.html">
+                            <a class="nav-link text-body" href="./login2">
                                 Account
                             </a>
                         </li>
@@ -272,43 +272,43 @@
                                                 <div class="align-items-center justify-content-between mt-5 d-none d-lg-flex">
                                                     <div class="me-5 f-w-20">
                                                         <a class="d-block" href="./category.html">
-                                                            <picture>
-                                                                <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-1.svg" alt="">
+                                                            <picture>           
+                                                                <img class="img-fluid d-table mx-auto" src="{{asset('logos/logo-1.svg')}}" alt="">
                                                             </picture>
                                                         </a>
                                                     </div>
                                                     <div class="me-5 f-w-20">
                                                         <a class="d-block" href="./category.html">
                                                             <picture>
-                                                                <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-2.svg" alt="">
+                                                                <img class="img-fluid d-table mx-auto" src="{{asset('images/logos/logo-2.svg')}}" alt="">
                                                             </picture>
                                                         </a>
                                                     </div>
                                                     <div class="me-5 f-w-20">
                                                         <a class="d-block" href="./category.html">
                                                             <picture>
-                                                                <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-3.svg" alt="">
+                                                                <img class="img-fluid d-table mx-auto" src="{{asset('images/logos/logo-3.svg')}}" alt="">
                                                             </picture>
                                                         </a>
                                                     </div>
                                                     <div class="me-5 f-w-20">
                                                         <a class="d-block" href="./category.html">
                                                             <picture>
-                                                                <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-4.svg" alt="">
+                                                                <img class="img-fluid d-table mx-auto" src="{{asset('images/logos/logo-4.svg')}}" alt="">
                                                             </picture>
                                                         </a>
                                                     </div>
                                                     <div class="me-5 f-w-20">
                                                         <a class="d-block" href="./category.html">
                                                             <picture>
-                                                                <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-5.svg" alt="">
+                                                                <img class="img-fluid d-table mx-auto" src="{{asset('images/logos/logo-5.svg')}}" alt="">
                                                             </picture>
                                                         </a>
                                                     </div>
                                                     <div class="me-5 f-w-20">
                                                         <a class="d-block" href="./category.html">
                                                             <picture>
-                                                                <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-6.svg" alt="">
+                                                                <img class="img-fluid d-table mx-auto" src="{{asset('images/logos/logo-6.svg')}}" alt="">
                                                             </picture>
                                                         </a>
                                                     </div>
@@ -392,12 +392,12 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="./index.html">Homepage</a></li>
-                                    <li><a class="dropdown-item" href="./category.html">Category</a></li>
-                                    <li><a class="dropdown-item" href="./product.html">Product</a></li>
+                                    <li><a class="dropdown-item" href="./category">Category</a></li>
+                                    <li><a class="dropdown-item" href="./product">Product</a></li>
                                     <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
-                                    <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
-                                    <li><a class="dropdown-item" href="./login.html">Login</a></li>
-                                    <li><a class="dropdown-item" href="./register.html">Register</a></li>
+                                    <li><a class="dropdown-item" href="./checkout">Checkout</a></li>
+                                    <li><a class="dropdown-item" href="./login2">Login</a></li>
+                                    <li><a class="dropdown-item" href="./register2">Register</a></li>
                                     <li><a class="dropdown-item" href="./forgotten-password.html">Forgotten Password</a></li>
                                 </ul>
                             </li>
