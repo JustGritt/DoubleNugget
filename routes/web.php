@@ -21,4 +21,28 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/category', function () {
+    return view('category');
+})->name('category');
+
+Route::get('/product', function () {
+    return view('product');
+})->name('product');
+
+Route::get('/checkout', function () {
+    return view('checkout');
+})->name('checkout');
+
+Route::get('/login2', function () {
+    return view('login');
+})->name('login2');
+
+Route::get('/register2', function () {
+    return view('register');
+})->name('register2');
+
+
+Route::get('/cart', function () {
+    return view('cart');
+})->name('cart');
 require __DIR__.'/auth.php';
