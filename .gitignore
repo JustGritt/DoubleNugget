@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 .git
 .idea
@@ -8,3 +9,12 @@ vendor
 composer-lock.json
 
 node_modules
+=======
+vendor 
+.DS_Store
+.git
+.idea
+composer-lock.json
+vendor
+node_modules
+>>>>>>> 22556f9c8981553a2b6d55831cb43655d0a7aaa1
