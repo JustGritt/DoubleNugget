@@ -7,22 +7,27 @@
 </p>
 
 <br>[DoubleNugget](#doublenugget) It is a project realized with the Laravel framework and Bootstrap, developed in two days (school project taking place over a week) with the objective of having a functional and neat application.
-
-> <br>3 days were dedicated to the learning and 2 days to the realization of the website with the objective to present the goal and the objectives reached in front of a jury.
 <br>
+
+> 3 days were dedicated to the learning and 2 days to the realization of the website with the objective to present the goal and the objectives reached in front of a jury.
+<br>
+
 ## Table of Contents
 
 1. **Getting Started**
     - [What is DoubleNugget ?](#doublenugget)
     <br>
+
 2. **Download & Prerequisites**
     - [Download instructions](#download)
-    - [Live test](#live-test)
+    - Live Test (coming soon)
     <br>
+
 3. **Contribute**
     - [Submit bugs and feature requests](#contributing)
     - [Support and donations](#contributing)
     <br>
+
 4. **Donations**
     - [Supporting the project](#supporting-the-project)
     <br>
