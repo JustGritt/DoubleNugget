@@ -1,2 +1,6 @@
+vendor 
+.DS_Store
+.git
+.idea
+composer-lock.json
 vendor
-composer.lock
