@@ -16,12 +16,14 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{asset('images/favicon/apple-touch-icon.png')}}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{asset('images/favicon/favicon-32x32.png')}}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon/favicon-16x16.png')}}">
-  <link rel="mask-icon" href="{{asset('assets/images/favicon/safari-pinned-tab.svg')}}" color="#5bbad5">
+  <link rel="mask-icon" href="{{asset('images/favicon/safari-pinned-tab.svg')}}" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Vendor CSS -->
   <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
+  <link rel="stylesheet" href="{{asset('css/libs.bundle.css')}}">
+
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
@@ -94,7 +96,7 @@
     
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="./login.html">
+                            <a class="nav-link text-body" href="./login">
                                 Account
                             </a>
                         </li>
@@ -122,7 +124,7 @@
                                     <div class="row mx-0 py-4 g-0 border-bottom">
                                         <div class="col-2 position-relative">
                                             <picture class="d-block ">
-                                                <img class="img-fluid" src="./assets/images/products/product-cart-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                <img class="img-fluid" src="{{asset('images/products/product-cart-1.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                                             </picture>
                                         </div>
                                         <div class="col-9 offset-1">
@@ -140,7 +142,7 @@
                                     <div class="row mx-0 py-4 g-0 border-bottom">
                                         <div class="col-2 position-relative">
                                             <picture class="d-block ">
-                                                <img class="img-fluid" src="./assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                <img class="img-fluid" src="{{asset('images/products/product-cart-2.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                                             </picture>
                                         </div>
                                         <div class="col-9 offset-1">
@@ -168,8 +170,8 @@
                                             <p class="m-0 fs-5 fw-bold">$422.99</p>
                                         </div>
                                     </div>
-                                    <a href="./cart.html" class="btn btn-outline-dark w-100 text-center mt-4" role="button">View Cart</a>
-                                    <a href="./checkout.html" class="btn btn-dark w-100 text-center mt-2" role="button">Proceed To Checkout</a>
+                                    <a href="./cart" class="btn btn-outline-dark w-100 text-center mt-4" role="button">View Cart</a>
+                                    <a href="./checkout" class="btn btn-dark w-100 text-center mt-2" role="button">Proceed To Checkout</a>
                                 </div>
                                 <!-- / Cart Summary-->
                               </div>
@@ -202,15 +204,15 @@
                                                   <div class="col">
                                                       <h6 class="dropdown-heading">Coats & Jackets</h6>
                                                       <ul class="list-unstyled">
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Waterproof Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Insulated Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Down Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Softshell Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Casual Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Windproof Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Breathable Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Cleaning & Proofing</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="./category.html">View All</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Waterproof Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Insulated Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Down Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Softshell Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Casual Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Windproof Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Breathable Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Cleaning & Proofing</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="./category">View All</a></li>
                                                       </ul>
                                                   </div>
                                                   <!-- / menu row-->
@@ -219,15 +221,15 @@
                                                   <div class="col">
                                                       <h6 class="dropdown-heading">Insulated</h6>
                                                       <ul class="list-unstyled">
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Insulated Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Bodywarmers</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Parkas</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Baselayers & Thermals</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Winter Hats</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Scarves & Neck</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Gloves & Mitts</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Accessories</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="./category.html">View All</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Insulated Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Bodywarmers</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Parkas</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Baselayers & Thermals</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Winter Hats</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Scarves & Neck</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Gloves & Mitts</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Accessories</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="./category">View All</a></li>
                                                       </ul>
                                                   </div>
                                                   <!-- / menu row-->
