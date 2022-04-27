@@ -1,6 +1,10 @@
-vendor 
 .DS_Store
 .git
 .idea
+.env
+.env.*
+vendor 
+
 composer-lock.json
-vendor
+
+node_modules
