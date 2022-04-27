@@ -474,6 +474,7 @@
         <!-- Featured Brands-->
         <div class="brand-section container-fluid" data-aos="fade-in">
             <div class="bg-overlay-sides-white-to-transparent bg-white py-5 py-md-7">
+                <h2 class="mb-5" style="text-align:center;">Nos partenaires exclusifs</h2>
                 <section class="marquee marquee-hover-pause">
                     <div class="marquee-body">
                         <div class="marquee-section animation-marquee-50">
@@ -724,7 +725,8 @@
                     </ul>
                 </div>
                 <div class="d-flex align-items-center justify-content-end flex-column flex-lg-row">
-                    <p class="small m-0 text-center text-lg-start">&copy; 2021 OldSkool All Rights Reserved. Template by <a href="https://www.pixelrocket.store">Pixel Rocket</a></p>
+                    <p class="small m-0 text-center text-lg-start">&copy; 2022 DoubleNuggets No Rights Reserved. We used a template by <a
+                            href="https://www.pixelrocket.store">Pixel Rocket</a> 🐔💖</p>
                     <ul class="list-unstyled mb-0 ms-lg-4 mt-3 mt-lg-0 d-flex justify-content-end align-items-center">
                         <li class="bg-light p-2 d-flex align-items-center justify-content-center me-2">
                             <i class="pi pi-sm pi-paypal"></i>
