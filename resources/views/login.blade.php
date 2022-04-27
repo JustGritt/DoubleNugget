@@ -25,10 +25,12 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Vendor CSS -->
-  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
+
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
+
 
   <!-- Fix for custom scrollbar if JS is disabled-->
   <noscript>
@@ -77,13 +79,13 @@
                     <div class="form-group">
                       <label for="login-password" class="form-label d-flex justify-content-between align-items-center">
                         Password
-                        <a href="./forgotten-password.html" class="text-muted small">Forgot your password?</a>
+                        <a href="./forgotten-password" class="text-muted small">Forgot your password?</a>
                       </label>
                       <input type="password" class="form-control" id="login-password" placeholder="Enter your password">
                     </div>
                     <button type="submit" class="btn btn-dark d-block w-100 my-4">Login</button>
                 </form>
-                <p class="d-block text-center text-muted">New customer? <a class="text-muted" href="./register.html">Sign up for an account</a></p>
+                <p class="d-block text-center text-muted">New customer? <a class="text-muted" href="./register">Sign up for an account</a></p>
             </div>
 
         </div>
@@ -96,10 +98,8 @@
 
     <!-- Theme JS -->
     <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+    <script src="{{asset('js/theme.bundle.js')}}"></script>
+    <script src="{{asset('js/vendor.bundle.js')}}"></script>
 </body>
 
 </html>
