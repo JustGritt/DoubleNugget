@@ -37,10 +37,11 @@ Route::get('/login2', function () {
     return view('login');
 })->name('login2');
 
+/*
 Route::get('/register2', function () {
     return view('register');
 })->name('register2');
-
+*/
 
 Route::get('/cart', function () {
     return view('cart');
