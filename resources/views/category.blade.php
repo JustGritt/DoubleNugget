@@ -329,7 +329,7 @@
                                                               <picture class="w-100 d-block mb-2 mx-auto">
                                                                   <img class="w-100 rounded" title="" src="./assets/images/banners/banner-12.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                                               </picture>
-                                                              <a class="fw-bolder link-cover" href="./category.html">Latest Arrivals</a>
+                                                              <a class="fw-bolder link-cover" href="./category.html">Nos nuggets phares</a>
                                                           </div>
                                                       </div>
                                                       <div class="col-12 col-md-6">

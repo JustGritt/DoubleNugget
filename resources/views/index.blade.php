@@ -263,37 +263,37 @@
                                                         <div class="col-12 col-md-6">
                                                             <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                                 <picture class="w-100 d-block mb-2 mx-auto">
-                                                                    <img class="w-100 rounded" title="" src="{{asset('images/banners/banner-12.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                    <img class="w-100 rounded" title="" src="{{asset('images/banners/Chicken/banner-1.jpeg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                                                                 </picture>
-                                                                <a class="fw-bolder link-cover" href="./category">Latest Arrivals</a>
+                                                                <a class="fw-bolder link-cover" href="./category">Nos nuggets phares</a>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                                 <picture class="w-100 d-block mb-2 mx-auto">
-                                                                    <img class="w-100 rounded" title="" src="{{asset('images/banners/banner-13.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                    <img class="w-100 rounded" title="" src="{{asset('images/banners/Chicken/banner-5.jpeg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                                                                 </picture>
-                                                                <a class="fw-bolder link-cover" href="./category">Accessories</a>
+                                                                <a class="fw-bolder link-cover" href="./category">Nos poules pondeuses</a>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                                 <picture class="w-100 d-block mb-2 mx-auto">
-                                                                    <img class="w-100 rounded" title="" src="{{asset('images/banners/banner-14.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                    <img class="w-100 rounded" title="" src="{{asset('images/banners/Chicken/banner-6.jpeg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                                                                 </picture>
-                                                                <a class="fw-bolder link-cover" href="./category">T-Shirts</a>
+                                                                <a class="fw-bolder link-cover" href="./category">Notre sélection</a>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                                 <picture class="w-100 d-block mb-2 mx-auto">
-                                                                    <img class="w-100 rounded" title="" src="{{asset('images/banners/banner-15.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                    <img class="w-100 rounded" title="" src="{{asset('images/banners/Chicken/banner-7.jpeg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                                                                 </picture>
-                                                                <a class="fw-bolder link-cover" href="./category">Jackets</a>
+                                                                <a class="fw-bolder link-cover" href="./category">Entretenir votre nugget</a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <a href="./category" class="btn btn-link p-0 fw-bolder text-link-border mt-5 text-dark mx-auto d-table">Visit Mens Section</a>
+                                                    <a href="./category" class="btn btn-link p-0 fw-bolder text-link-border mt-5 text-dark mx-auto d-table">Consulter nos recommandations</a>
                                                 </div>
                                             </div>
                                             <!-- Menswear Dropdown Menu Images Section-->
@@ -304,25 +304,35 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Coque
+                                    Coq
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./category">Tops</a></li>
-                                    <li><a class="dropdown-item" href="./category">Bottoms</a></li>
-                                    <li><a class="dropdown-item" href="./category">Jeans</a></li>
-                                    <li><a class="dropdown-item" href="./category">T-Shirts</a></li>
-                                    <li><a class="dropdown-item" href="./category">Shoes</a></li>
-                                    <li><a class="dropdown-item" href="./category">Accessories</a></li>
+                                    <li><a class="dropdown-item" href="./category">Chabo</a></li>
+                                    <li><a class="dropdown-item" href="./category">Sabelpoot</a></li>
+                                    <li><a class="dropdown-item" href="./category">Padoue</a></li>
+                                    <li><a class="dropdown-item" href="./category">Brahma</a></li>
+                                    <li><a class="dropdown-item" href="./category">Crèvecoeur</a></li>
+                                    <li><a class="dropdown-item" href="./category">Hollandais huppé</a></li>
+                                    <li><a class="dropdown-item" href="./category">Gauloise</a></li>
+                                    <li><a class="dropdown-item" href="./category">Susex</a></li>
+                                    <li><a class="dropdown-item" href="./category">Coquins</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./category" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Poussin
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./category">Tamago</a></li>
+                                    <li><a class="dropdown-item" href="./category">Ameraucana</a></li>
+                                    <li><a class="dropdown-item" href="./category">Barnevelder</a></li>
+                                    <li><a class="dropdown-item" href="./category">Ancona</a></li>
+                                    <li><a class="dropdown-item" href="./category">Buttercup</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./category" role="button">
-                                    Poussain
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./category" role="button">
-                                    Soldes
+                                    Promotions
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
@@ -385,16 +395,16 @@
                     <!-- Slide-->
                     <div class="swiper-slide position-relative h-100 w-100">
                         <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
-                            <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100" style=" will-change: transform; background-image: url({{asset('images/banners/banner-1.jpg')}})">
+                            <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100" style=" will-change: transform; background-image: url({{asset('images/banners/Chicken/banner-1.jpeg')}})">
                             </div>
                         </div>
                         <div class="container position-relative z-index-10 d-flex h-100 align-items-start flex-column justify-content-center">
-                            <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">Everything You Need</p>
+                            <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">Nos promotions</p>
                             <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
-                                <span class="text-outline-light">Summer</span> Essentials
+                                <span class="text-outline-light">Summer Chicken</span> Collection
                             </h2>
                             <div data-swiper-parallax-y="-25">
-                                <a href="./category" class="btn btn-psuedo text-white" role="button">Shop New Arrivals</a>
+                                <a href="./category" class="btn btn-psuedo text-white" role="button">Consulter la collection</a>
                             </div>
                         </div>
                     </div>
@@ -403,15 +413,15 @@
                     <!-- Slide-->
                     <div class="swiper-slide position-relative h-100 w-100">
                         <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
-                            <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100" style=" will-change: transform; background-image: url({{asset('images/banners/banner-2.jpg')}})">
+                            <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100" style=" will-change: transform; background-image: url({{asset('images/banners/Chicken/banner-2.jpeg')}})">
                             </div>
                         </div>
                         <div class="container position-relative z-index-10 d-flex h-100 align-items-start flex-column justify-content-center">
-                            <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">Spring Collection</p>
+                            <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">Les plus populaires</p>
                             <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
-                                Adidas <span class="text-outline-light">SS21</span></h2>
+                                Adopter votre nugget</h2>
                             <div data-swiper-parallax-y="-25">
-                                <a href="./category" class="btn btn-psuedo text-white" role="button">Shop Latest Adidas</a>
+                                <a href="./category" class="btn btn-psuedo text-white" role="button">J'adopte !</a>
                             </div>
                         </div>
                     </div>
@@ -420,15 +430,15 @@
                     <!-- Slide-->
                     <div class="swiper-slide position-relative h-100 w-100">
                         <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
-                            <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100" style=" will-change: transform; background-image: url({{asset('images/banners/banner-4.jpg')}})">
+                            <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100" style=" will-change: transform; background-image: url({{asset('images/banners/Chicken/banner-3.jpeg')}})">
                             </div>
                         </div>
                         <div class="container position-relative z-index-10 d-flex h-100 align-items-start flex-column justify-content-center">
-                            <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">Just Do it</p>
+                            <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">Notre sélection</p>
                             <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
-                                Nike <span class="text-outline-light">SS21</span></h2>
+                                Vos nuggets préférés</h2>
                             <div data-swiper-parallax-y="-25">
-                                <a href="./category" class="btn btn-psuedo text-white" role="button">Shop Latest Nike</a>
+                                <a href="./category" class="btn btn-psuedo text-white" role="button">Consulter</a>
                             </div>
                         </div>
                     </div>
@@ -437,16 +447,16 @@
                     <!--Slide-->
                     <div class="swiper-slide position-relative h-100 w-100">
                         <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
-                            <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100" style=" will-change: transform; background-image: url({{asset('images/banners/banner-3.jpg')}})">
+                            <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100" style=" will-change: transform; background-image: url({{asset('images/banners/Chicken/banner-4.jpeg')}})">
                             </div>
                         </div>
                         <div class="container position-relative z-index-10 d-flex h-100 align-items-start flex-column justify-content-center">
-                            <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">Look Good Feel Good</p>
+                            <p class="title-small text-white opacity-75 mb-0" data-swiper-parallax="-100">En apprendre davantage</p>
                             <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
-                                <span class="text-outline-light">Sustainable</span> Fashion
+                                <span class="text-outline-light">Nos articles</span> Nugget
                             </h2>
                             <div data-swiper-parallax-y="-25">
-                                <a href="./category.html" class="btn btn-psuedo text-white" role="button">Why We Are Different</a>
+                                <a href="./category.html" class="btn btn-psuedo text-white" role="button">Lire nos articles</a>
                             </div>
                         </div>
                     </div>
