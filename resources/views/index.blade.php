@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Vendor CSS -->
-  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  <link rel="stylesheet" href="../css/libs.bundle.css" />
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
