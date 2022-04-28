@@ -418,83 +418,43 @@
 
             <!-- Products-->
             <div class="row g-4">
+                @foreach($products as $product)
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <!-- Card Product-->
-                        <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
-                            <div class="card-img position-relative">
-                                <div class="card-badges">
-                                        <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Sale</span>
-                                </div>
-                                <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
-                                <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{asset('images/products/Chicken/product-1.jpg')}}" alt="">
-                                </picture>
-                                    <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                        <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
+                            <!-- Card Product-->
+                            <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
+                                <div class="card-img position-relative">
+                                    <div class="card-badges">
+                                            <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-danger rounded-circle d-block me-1"></span> Sale</span>
                                     </div>
-                            </div>
-                            <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product">Nike Air VaporMax 2021</a>
-                                <small class="text-muted d-block">4 colours, 10 sizes</small>
-                                        <p class="mt-2 mb-0 small"><s class="text-muted">$329.99</s> <span class="text-danger">$198.66</span></p>
-                            </div>
-                        </div>
-                        <!--/ Card Product-->
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <!-- Card Product-->
-                        <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
-                            <div class="card-img position-relative">
-                                <div class="card-badges">
-                                        <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-success rounded-circle d-block me-1"></span> New In</span>
+                                    <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
+                                    <picture class="position-relative overflow-hidden d-block bg-light">
+                                        <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{asset('faker/').'/'. $product->image }}" alt="">
+                                    </picture>
+                                        <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
+                                            <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
+                                        </div>
                                 </div>
-                                <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
-                                <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{asset('images/products/Chicken/product-2.jpg')}}" alt="">
-                                </picture>
-                                    <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                        <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
-                                    </div>
-                            </div>
-                            <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product">Nike ZoomX Vaporfly</a>
-                                <small class="text-muted d-block">2 colours, 4 sizes</small>
-                                        <p class="mt-2 mb-0 small">$275.45</p>
-                            </div>
-                        </div>
-                        <!--/ Card Product-->
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <!-- Card Product-->
-                        <div class="card border border-transparent position-relative overflow-hidden h-100 transparent">
-                            <div class="card-img position-relative">
-                                <div class="card-badges">
-                                        <span class="badge badge-card"><span class="f-w-2 f-h-2 bg-secondary rounded-circle d-block me-1"></span> Sold Out</span>
+                                <div class="card-body px-0">
+                                    <a class="text-decoration-none link-cover" href="./product">Nike Air VaporMax 2021</a>
+                                    <small class="text-muted d-block">4 colours, 10 sizes</small>
+                                            <p class="mt-2 mb-0 small"><s class="text-muted">$329.99</s> <span class="text-danger">$198.66</span></p>
                                 </div>
-                                <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
-                                <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{asset('images/products/Chicken/product-1.jpg')}}" alt="">
-                                </picture>
                             </div>
-                            <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.html">Nike Blazer Mid &#x27;77</a>
-                                <small class="text-muted d-block">5 colours, 6 sizes</small>
-                                    <p class="mt-2 mb-0 small text-muted">Sold Out</p>
-                            </div>
-                        </div>
+                           
                         <!--/ Card Product-->
                     </div>
+                @endforeach    
             </div>
             <!-- / Products-->
 
             <!-- Pagination-->
-            <div class="d-flex flex-column f-w-44 mx-auto my-5 text-center">
-                <small class="text-muted">Showing 9 of 121 products</small>
-                <div class="progress f-h-1 mt-3">
-                    <div class="progress-bar bg-dark" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <a href="#" class="btn btn-outline-dark btn-sm mt-5 align-self-center py-3 px-4 border-2">Load More</a>
-            </div>            <!-- / Pagination-->
+            
+            <div class="d-flex flex-row f-w-44 mx-auto my-5 text-center">
+                <span style="display:flex; flex-direction:row; widht:80px; background-color:red;">{{$products->links()}}</span>
+                <a href="#" class="btn btn-outline-dark btn-sm mt-5 align-self-center py-3 px-4 border-2">Load More</a>    
+            </div> 
+           
+            <!-- / Pagination-->
         </div>
         
         <!-- /Page Content -->

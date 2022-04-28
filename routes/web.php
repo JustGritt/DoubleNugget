@@ -24,10 +24,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 */
 
-
+/*
 Route::get('/category', function () {
     return view('category');
 })->name('category');
+*/
 
 Route::get('/product', function () {
     return view('product');
@@ -43,6 +44,7 @@ Route::get('/login2', function () {
 
 Route::get('/dashboard', [Usercontroller::class, 'getUsers'])->middleware(['auth'])->name('dashboard');
 
+Route::get('/category', [ProductController::class, 'getProduct'])->name('category');
 Route::get('/test', [ProductController::class, 'getProduct'])->middleware(['auth'])->name('getproduct');
 Route::get('/test/{id}', [ProductController::class, 'delete'])->middleware(['auth'])->name('deleteproduct');
 Route::get('/create-product', [ProductController::class, 'createProduct'])->middleware(['auth'])->name('createproduct');

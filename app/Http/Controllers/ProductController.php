@@ -10,8 +10,8 @@ class ProductController extends Controller
 {
     public function getProduct() {
         //$products =  DB::table('products')->paginate(2);
-        $products = Product::paginate(2);
-        return view('test', ['products' => $products]);
+        $products = Product::paginate(3);
+        return view('category', ['products' => $products]);
     }
 
     public function delete($id) {
