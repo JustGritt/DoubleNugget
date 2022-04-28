@@ -199,14 +199,14 @@
                                                     <div class="col">
                                                         <h6 class="dropdown-heading text-danger">Special Offers</h6>
                                                         <ul class="list-unstyled">
-                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Insulated Jackets</a></li>
-                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Bodywarmers</a></li>
-                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Parkas</a></li>
-                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Baselayers & Thermals</a></li>
-                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Winter Hats</a></li>
-                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Scarves & Neck</a></li>
-                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Gloves & Mitts</a></li>
-                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Accessories</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category">Insulated Jackets</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category">Bodywarmers</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category">Parkas</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category">Baselayers & Thermals</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category">Winter Hats</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category">Scarves & Neck</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category">Gloves & Mitts</a></li>
+                                                            <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category">Accessories</a></li>
                                                             <li class="dropdown-list-item"><a class="dropdown-item text-danger dropdown-link-all" href="./category">View All</a></li>
                                                         </ul>
                                                     </div>
@@ -372,7 +372,7 @@
         
         <!-- Category Top Banner -->
         <div class="py-10 bg-img-cover bg-overlay-dark position-relative overflow-hidden bg-pos-center-center rounded-0"
-            style="background-image: url(./assets/images/banners/banner-category-top.jpg);">
+            style="background-image: url({{asset('images/banners/Chicken/banner-1.jpeg')}});">
             <div class="container-fluid position-relative z-index-20" data-aos="fade-right" data-aos-delay="300">
                 <h1 class="fw-bold display-6 mb-4 text-white">Latest Arrivals</h1>
                 <div class="col-12 col-md-6">
@@ -427,14 +427,14 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-1.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{asset('images/products/Chicken/product-1.jpg')}}" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
                                         <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.html">Nike Air VaporMax 2021</a>
+                                <a class="text-decoration-none link-cover" href="./product">Nike Air VaporMax 2021</a>
                                 <small class="text-muted d-block">4 colours, 10 sizes</small>
                                         <p class="mt-2 mb-0 small"><s class="text-muted">$329.99</s> <span class="text-danger">$198.66</span></p>
                             </div>
@@ -450,14 +450,14 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-2.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{asset('images/products/Chicken/product-2.jpg')}}" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
                                         <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="./product.html">Nike ZoomX Vaporfly</a>
+                                <a class="text-decoration-none link-cover" href="./product">Nike ZoomX Vaporfly</a>
                                 <small class="text-muted d-block">2 colours, 4 sizes</small>
                                         <p class="mt-2 mb-0 small">$275.45</p>
                             </div>
@@ -473,7 +473,7 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-3.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{asset('images/products/Chicken/product-1.jpg')}}" alt="">
                                 </picture>
                             </div>
                             <div class="card-body px-0">
