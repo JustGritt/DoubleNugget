@@ -3,49 +3,49 @@
 
 <!-- Head -->
 <head>
-  <!-- Page Meta Tags-->
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="keywords" content="">
+    <!-- Page Meta Tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
 
-  <!-- Custom Google Fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
-    rel="stylesheet">
+    <!-- Custom Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+        rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
-  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-  <!-- Vendor CSS -->
-  <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
-
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
 
 
-  <!-- Fix for custom scrollbar if JS is disabled-->
-  <noscript>
-    <style>
-      /**
-          * Reinstate scrolling for non-JS clients
-          */
-      .simplebar-content-wrapper {
-        overflow: auto;
-      }
-    </style>
-  </noscript>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
 
-  <!-- Page Title -->
-  <title>OldSkool | Bootstrap 5 HTML Template</title>
+
+    <!-- Fix for custom scrollbar if JS is disabled-->
+    <noscript>
+        <style>
+        /**
+            * Reinstate scrolling for non-JS clients
+            */
+        .simplebar-content-wrapper {
+            overflow: auto;
+        }
+        </style>
+    </noscript>
+
+    <!-- Page Title -->
+    <title>Panier | DoubleNugget</title>
 
 </head>
 <body class="">
@@ -76,49 +76,70 @@
                                         href="./checkout-payment.html">Payment</a></li>
                             </ul>
                         </nav>                        <div class="mt-5">
-                            <h3 class="fs-5 fw-bolder mb-0 border-bottom pb-4">Your Cart</h3>
+                            <h3 class="fs-5 fw-bolder mb-0 border-bottom pb-4">
+
+                                @if(Cart::count() > 0)
+                                            Votre panier contient {{ Cart::count() }} produit(s) 
+                                        @else
+                                        <div class="row">
+                                                <div class="col-12">
+                                                    <div class="alert alert-danger">
+                                                        <p>Votre panier est vide</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endif
+                            </h3>
+
+
+                            <div>
+                                <div>
+                                    @if(session()->has('success_message'))
+                                        <div class="alert alert-success">
+                                            {{ session()->get('success_message') }}
+                                        </div>
+                                    @endif
+                                    @if(count($errors) > 0)
+                                        <div class="alert alert-danger">
+                                            <ul>
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
+                                </div>
+                            </div>
+
                             <div class="table-responsive">
                                 <table class="table align-middle">
                                     <tbody class="border-0">
-                                        <!-- Cart Item-->
-                                        <div class="row mx-0 py-4 g-0 border-bottom">
-                                            <div class="col-2 position-relative">
-                                                <picture class="d-block border">
-                                                    <img class="img-fluid" src="./assets/images/products/product-cart-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
-                                                </picture>
-                                            </div>
-                                            <div class="col-9 offset-1">
-                                                <div>
-                                                    <h6 class="justify-content-between d-flex align-items-start mb-2">
-                                                        Nike Air VaporMax 2021
-                                                        <i class="ri-close-line ms-3"></i>
-                                                    </h6>
-                                                    <span class="d-block text-muted fw-bolder text-uppercase fs-9">Size: 9 / Qty: 1</span>
+
+                                        @foreach(Cart::content() as $item)
+                                            <!-- Cart Item-->
+                                            <div class="row mx-0 py-4 g-0 border-bottom">
+                                                <div class="col-2 position-relative">
+                                                    <picture class="d-block border">
+                                                        <img class="img-fluid" src="{{asset('faker/').'/'. $item->image }}" alt="Image du produit">
+                                                    </picture>
                                                 </div>
-                                                <p class="fw-bolder text-end text-muted m-0">$85.00</p>
-                                            </div>
-                                        </div>                                        <!-- / Cart Item-->
-                                        <!-- Cart Item-->
-                                        <div class="row mx-0 py-4 g-0 border-bottom">
-                                            <div class="col-2 position-relative">
-                                                <picture class="d-block border">
-                                                    <img class="img-fluid" src="./assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
-                                                </picture>
-                                            </div>
-                                            <div class="col-9 offset-1">
-                                                <div>
-                                                    <h6 class="justify-content-between d-flex align-items-start mb-2">
-                                                        Nike ZoomX Vaporfly
-                                                        <i class="ri-close-line ms-3"></i>
-                                                    </h6>
-                                                    <span class="d-block text-muted fw-bolder text-uppercase fs-9">Size: 11 / Qty: 1</span>
+                                                <div class="col-9 offset-1">
+                                                    <div>
+                                                        <h6 class="justify-content-between d-flex align-items-start mb-2">
+                                                            {{ $item->name }}
+                                                            <i class="ri-close-line ms-3"></i>
+                                                        </h6>
+                                                        <span class="d-block text-muted fw-bolder text-uppercase fs-9">{{ $item->quantity }}</span>
+                                                    </div>
+                                                    <p class="fw-bolder text-end text-muted m-0">{{$item->price}}</p>
                                                 </div>
-                                                <p class="fw-bolder text-end text-muted m-0">$125.00</p>
-                                            </div>
-                                        </div>                                        <!-- / Cart Item-->
+                                            </div>      
+                                        @endforeach                              <!-- / Cart Item-->
+
                                     </tbody>
                                 </table>
                             </div>
+
                         </div>
                     </div>
                 </div>

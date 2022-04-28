@@ -8,6 +8,12 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
+    public function index()
+    {
+        $products = Product::inRandomOrder()->take(3)->get();
+        return view('product', ['products' => $products]);
+    }
+
     public function getProduct() {
         //$products =  DB::table('products')->paginate(2);
         $products = Product::paginate(3);

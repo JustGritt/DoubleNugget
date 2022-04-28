@@ -14,10 +14,16 @@ class Product extends Model
      */
     protected $fillable = [
         'name',
+        'slug',
+        'type',
         'description',
         'price',
         'taille',
         'quantity',
     ];
- 
+
+    public function presentPrice($param)
+    {
+        return money_format('%i', $this->price/100);
+    }
 }
