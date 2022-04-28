@@ -15,8 +15,21 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('description');
+            $table->double('price');
+            $table->string('image');
+            $table->double('taille');
+            $table->double('quantity');
             $table->timestamps();
         });
+    }
+    public function run()
+    {
+        Product::factory()
+                ->count(50)
+                ->hasPosts(1)
+                ->create();
     }
 
     /**
