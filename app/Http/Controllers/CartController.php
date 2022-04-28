@@ -19,9 +19,16 @@ class CartController extends Controller
         return redirect()->route('cart')->with('success_message', 'Le nugget a bien été ajouté au panier !');
     }
 
-    public function destroy($id)
+    public function empty()
     {
-        Cart::remove($id);
+        Cart::destroy();
+        return back()->with('success_message', 'Le panier a bien été vidé !');
+    }
+
+    public function destroy($product)
+    {
+        Cart::remove($product);
         return redirect()->back()->with('success_message', 'Le nugget a bien été supprimé du panier !');
     }
+
 }

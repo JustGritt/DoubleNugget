@@ -21,9 +21,4 @@ class Product extends Model
         'taille',
         'quantity',
     ];
-
-    public function presentPrice($param)
-    {
-        return money_format('%i', $this->price/100);
-    }
 }

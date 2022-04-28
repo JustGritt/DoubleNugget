@@ -51,8 +51,8 @@ Route::get('/login2', function () {
 Route::get('/dashboard', [Usercontroller::class, 'getUsers'])->middleware(['auth'])->name('dashboard');
 
 Route::get('/category', [ProductController::class, 'getProduct'])->name('category');
-// Route::get('/test', [ProductController::class, 'getProduct'])->middleware(['auth'])->name('getproduct');
-// Route::get('/test/{id}', [ProductController::class, 'delete'])->middleware(['auth'])->name('deleteproduct');
+Route::get('/test', [ProductController::class, 'getProduct'])->middleware(['auth'])->name('getproduct');
+Route::get('/test/{id}', [ProductController::class, 'delete'])->middleware(['auth'])->name('deleteproduct');
 Route::get('/create-product', [ProductController::class, 'createProduct'])->middleware(['auth'])->name('createproduct');
 
 
@@ -63,8 +63,9 @@ Route::get('/tmp', [LandingPageController::class, 'index'])->name('tmp');
 // Cart routes
 Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
 Route::post('/cart', [CartController::class, 'store'])->name('cart.store');
+Route::delete('/cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
 
-Route::get('destroy', function () {
+Route::get('empty', function () {
     Cart::destroy();
 });
 
