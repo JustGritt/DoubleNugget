@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Product;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\Usercontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,15 +18,19 @@ Route::get('/', function () {
     return view('index');
 });
 
+/*
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+*/
 
+/*
 Route::get('/category', function () {
     return view('category');
 })->name('category');
+*/
 
-Route::get('/product/{id}', [Product::class, 'index'])->name('product');
+Route::get('/product/{id}', [Product::class, 'getProduct'])->name('product');
 
 Route::get('/checkout', function () {
     return view('checkout');
@@ -35,7 +40,14 @@ Route::get('/login2', function () {
     return view('login');
 })->name('login2');
 
-//Route::get('/test', [Product::class, 'getProduct'])->name('test');
+Route::get('/dashboard', [Usercontroller::class, 'getUsers'])->middleware(['auth'])->name('dashboard');
+
+Route::get('/category', [ProductController::class, 'getProduct'])->name('category');
+Route::get('/test', [ProductController::class, 'getProduct'])->middleware(['auth'])->name('getproduct');
+Route::get('/test/{id}', [ProductController::class, 'delete'])->middleware(['auth'])->name('deleteproduct');
+Route::get('/create-product', [ProductController::class, 'createProduct'])->middleware(['auth'])->name('createproduct');
+
+
 /*
 Route::get('/register2', function () {
     return view('register');
@@ -45,12 +57,5 @@ Route::get('/register2', function () {
 Route::get('/cart', function () {
     return view('cart');
 })->name('cart');
-
-
-
-//Route::group(function (){
-//    Route::get("/get-coments",[]);
-//});
-
 
 require __DIR__.'/auth.php';

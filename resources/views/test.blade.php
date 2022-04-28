@@ -11,11 +11,16 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     @foreach ($products as $product)
                         {{ $product->name }}
-                       
+
+                            <a href="{{ route('deleteproduct', ['id' => $product->id ]) }}">Delete this message</a>
+                            @csrf
+
                         <img src="{{asset('faker/').'/'. $product->image }}" >
                     @endforeach    
+                    {{ $products->links() }}
                 </div>
             </div>
+           
         </div>
     </div>
 </x-app-layout>
