@@ -152,8 +152,8 @@
                                             <p class="m-0 fs-5 fw-bold">$422.99</p>
                                         </div>
                                     </div>
-                                    <a href="./cart.html" class="btn btn-outline-dark w-100 text-center mt-4" role="button">View Cart</a>
-                                    <a href="./checkout.html" class="btn btn-dark w-100 text-center mt-2" role="button">Proceed To Checkout</a>
+                                    <a href="./cart" class="btn btn-outline-dark w-100 text-center mt-4" role="button">View Cart</a>
+                                    <a href="./checkout" class="btn btn-dark w-100 text-center mt-2" role="button">Proceed To Checkout</a>
                                 </div>
                                 <!-- / Cart Summary-->
                               </div>
@@ -394,11 +394,11 @@
                               <li class="breadcrumb-item"><a href="#">Sneakers</a></li>
                               <li class="breadcrumb-item active" aria-current="page">New Releases</li>
                             </ol>
-                        </nav>        <h1 class="fw-bold fs-3 mb-2">New Releases (121)</h1>
-                        <p class="m-0 text-muted small">Showing 1 - 9 of 121</p>
+                        </nav>        <h1 class="fw-bold fs-3 mb-2">New Releases</h1>
+                        <p class="m-0 text-muted small"></p>
                     </div>
                     <div class="d-flex justify-content-end align-items-center mt-4 mt-lg-0 flex-column flex-md-row">
-                
+                    
                         <!-- Filter Trigger-->
                         <button class="btn bg-light p-3 me-md-3 d-flex align-items-center fs-7 lh-1 w-100 mb-2 mb-md-0 w-md-auto " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters" aria-controls="offcanvasFilters">
                             <i class="ri-equalizer-line me-2"></i> Filters
@@ -435,9 +435,9 @@
                                         </div>
                                 </div>
                                 <div class="card-body px-0">
-                                    <a class="text-decoration-none link-cover" href="./product">Nike Air VaporMax 2021</a>
-                                    <small class="text-muted d-block">4 colours, 10 sizes</small>
-                                            <p class="mt-2 mb-0 small"><s class="text-muted">$329.99</s> <span class="text-danger">$198.66</span></p>
+                                    <a class="text-decoration-none link-cover" href="./product/{{$product->id}}">{{$product->name}}</a>
+                                    <small class="text-muted d-block">@php echo round($product->quantity) @endphp quantity, @php echo round($product->taille) @endphp sizes</small>
+                                            <p class="mt-2 mb-0 small"><s class="text-muted"> @php echo rand(5, $product->price ) @endphp</s> <span class="text-danger">{{$product->price}}</span></p>
                                 </div>
                             </div>
                            
