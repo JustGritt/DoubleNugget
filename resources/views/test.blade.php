@@ -17,7 +17,7 @@
 
                         <img src="{{asset('faker/').'/'. $product->image }}" >
                     @endforeach    
-                    {{ $products->links() }}
+                    
                 </div>
             </div>
            

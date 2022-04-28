@@ -42,11 +42,14 @@ Route::get('/login2', function () {
     return view('login');
 })->name('login2');
 
-Route::get('/dashboard', [Usercontroller::class, 'getUsers'])->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard', [Usercontroller::class, 'getProductAndUser'])->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard/{id}', [Usercontroller::class, 'deleteUsers'])->middleware(['auth'])->name('deleteUsers');
 
 Route::get('/category', [ProductController::class, 'getProduct'])->name('category');
-Route::get('/test', [ProductController::class, 'getProduct'])->middleware(['auth'])->name('getproduct');
+
+//Route::get('/test', [ProductController::class, 'getProduct'])->middleware(['auth'])->name('getproduct');
 Route::get('/test/{id}', [ProductController::class, 'delete'])->middleware(['auth'])->name('deleteproduct');
+
 Route::get('/create-product', [ProductController::class, 'createProduct'])->middleware(['auth'])->name('createproduct');
 
 
