@@ -11,10 +11,11 @@ class ProductFactory extends Factory
     {
         return [
             'name' => $this->faker->name,
-            'description' => $this->faker->name,
-            'price' => $this->faker->randomNumber(252),
+            'description' => $this->faker->shuffleString,
+            'price' => $this->faker->randomFloat(10),
+            'taille'=> $this->faker->randomFloat(23),
             'image' =>  $this->faker->imageUrl(350, 350),
-            'gender_id' => $this->faker->randomNumber(12)
+            'quantity' => $this->faker->randomNumber()
         ];
     }
 }
