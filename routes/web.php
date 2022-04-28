@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Product;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,6 +37,7 @@ Route::get('/login2', function () {
     return view('login');
 })->name('login2');
 
+Route::get('/test', [Product::class, 'getProduct'])->name('test');
 /*
 Route::get('/register2', function () {
     return view('register');
