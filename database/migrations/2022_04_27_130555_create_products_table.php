@@ -24,13 +24,6 @@ return new class extends Migration
             $table->timestamps();
         });
     }
-    public function run()
-    {
-        Product::factory()
-                ->count(50)
-                ->hasPosts(1)
-                ->create();
-    }
 
     /**
      * Reverse the migrations.
