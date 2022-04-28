@@ -489,9 +489,9 @@
                             </div>
                             </div>
                             
-                            <h1 class="mb-1 fs-2 fw-bold">Kiikii Osaka Japan Mens T-Shirt Limited Edition</h1>
+                            <h1 class="mb-1 fs-2 fw-bold">{{$product->name}}</h1>
                             <div class="d-flex justify-content-between align-items-center">
-                                <p class="fs-4 m-0">$34.99</p>
+                                <p class="fs-4 m-0">${{$product->price}}</p>
                             </div>
                             <div class="border-top mt-4 mb-3 product-option">
                                 <small class="text-uppercase pt-4 d-block fw-bolder">
@@ -547,7 +547,6 @@
                                                     value="Xl" 
                                                     id="option-sizes-4">
                                                 <label for="option-sizes-4">
-                                                    
                                                     <small>XL</small>
                                                 </label>
                                             </div>                    <div class="form-check-option form-check-rounded">
@@ -612,7 +611,7 @@
                                   </h2>
                                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionProduct">
                                     <div class="accordion-body">
-                                        <p class="m-0">Made from 100% organic cotton, The Kiikii Osaka Japan T-Shirt was created with everyday use in mind. It features printed graphics and heavyweight fabric for maximum comfort and lifespan.</p>
+                                        <p class="m-0">{{$product->description}}</p>
                                     </div>
                                   </div>
                                 </div>

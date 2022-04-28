@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Product;
+use App\Models\Review;
 use Illuminate\Database\Seeder;
 
 
@@ -15,8 +16,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Product::factory()
-            ->count(50)
+        Product::factory(10)
             ->create();
+
+      //  Review::factory()
+      //      ->count(250)
+      //      ->create();
     }
 }

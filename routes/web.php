@@ -25,9 +25,7 @@ Route::get('/category', function () {
     return view('category');
 })->name('category');
 
-Route::get('/product', function () {
-    return view('product');
-})->name('product');
+Route::get('/product/{id}', [Product::class, 'index'])->name('product');
 
 Route::get('/checkout', function () {
     return view('checkout');
@@ -37,7 +35,7 @@ Route::get('/login2', function () {
     return view('login');
 })->name('login2');
 
-Route::get('/test', [Product::class, 'getProduct'])->name('test');
+//Route::get('/test', [Product::class, 'getProduct'])->name('test');
 /*
 Route::get('/register2', function () {
     return view('register');
@@ -47,4 +45,12 @@ Route::get('/register2', function () {
 Route::get('/cart', function () {
     return view('cart');
 })->name('cart');
+
+
+
+//Route::group(function (){
+//    Route::get("/get-coments",[]);
+//});
+
+
 require __DIR__.'/auth.php';
