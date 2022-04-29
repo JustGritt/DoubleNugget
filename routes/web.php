@@ -23,11 +23,11 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 Route::get('/', function () {
     return view('index');
 });
-
+/*
 Route::get('/product', function () {
     return view('product');
 })->name('product');
-
+*/
 Route::get('/checkout', function () {
     return view('checkout');
 })->name('checkout');
@@ -36,6 +36,7 @@ Route::get('/login2', function () {
     return view('login');
 })->name('login2');
 
+Route::get('/product' ,[ProductController::class, 'getProductforView'])->name('product');
 Route::get('/dashboard', [Usercontroller::class, 'getProductAndUser'])->middleware(['auth'])->name('dashboard');
 //Route::get('/dashboard/{id}', [Usercontroller::class, 'deleteUsers'])->middleware(['auth'])->name('deleteUsers');
 
@@ -59,7 +60,7 @@ Route::get('/tmp', [LandingPageController::class, 'index'])->name('tmp');
 // Cart routes
 Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
 Route::post('/cart', [CartController::class, 'store'])->name('cart.store');
-Route::delete('/cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
+Route::post('/cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
 
 Route::get('empty', function () {
     Cart::destroy();
@@ -79,7 +80,7 @@ Route::group(['middleware' => 'auth'] , function() {
         'middleware' => 'is_admin',
         'as' => 'admin.'
     ], function() {
-        Route::get('/users', [Usercontroller::class, 'getUsers'])->name('users');
+        Route::get('/product', [ProductController::class, 'getProduct'])->name('getproduct');
         Route::get('/dashboard/{id}', [Usercontroller::class, 'deleteUser'])->name('deleteUsers');
         Route::get('/products/{id}', [ProductController::class, 'delete'])->name('deleteproduct');
         Route::get('/create-product', function () { return view('create-product'); })->name('createproduct');

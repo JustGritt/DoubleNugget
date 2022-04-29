@@ -430,14 +430,20 @@
                                     <picture class="position-relative overflow-hidden d-block bg-light">
                                         <img class="w-100 img-fluid position-relative z-index-10" title="" src="{{asset('faker/').'/'. $product->image }}" alt="">
                                     </picture>
-                                        <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                            <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
-                                        </div>
+                                    <form action="{{ route('cart.store') }}" method="POST">
+                                       @csrf
+                                        <input type="hidden" name="id" value="{{ $product->id }}">
+                                        <input type="hidden" name="name" value="{{ $product->name }}">
+                                        <input type="hidden" name="price" value="{{ $product->price }}">
+                                        <input type="hidden" name="image" value="{{ $product->image }}">
+                                        <input type="hidden" name="quantity" value="1">
+                                        <button class="btn mt-2" type="submit" style="border: 1px solid #000;">Ajouter au panier</button>
+                                    </form>
                                 </div>
                                 <div class="card-body px-0">
-                                    <a class="text-decoration-none link-cover" href="./product/{{$product->id}}">{{$product->name}}</a>
+                                    <span class="text-muted d-block">{{$product->name}}</span>
                                     <small class="text-muted d-block">@php echo round($product->quantity) @endphp quantity, @php echo round($product->taille) @endphp sizes</small>
-                                            <p class="mt-2 mb-0 small"><s class="text-muted"> @php echo rand(5, $product->price ) @endphp</s> <span class="text-danger">{{$product->price}}</span></p>
+                                            <p class="mt-2 mb-0 small"><s class="text-muted"> @php echo rand($product->price,  ($product->price +100 )) @endphp</s> <span class="text-danger">{{$product->price}}</span></p>
                                 </div>
                             </div>
                            

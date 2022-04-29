@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Gloudemans\Shoppingcart\Facades\Cart;
+use App\Models\Product;
 
 class CartController extends Controller
 {
     public function index()
     {
-        $mightAlsoLike = Product::mightAlsoLike()->get();
+        $mightAlsoLike = Product::paginate(3);
         return view('cart', ['mightAlsoLike' => $mightAlsoLike]);
     }
 
@@ -25,9 +26,13 @@ class CartController extends Controller
         return back()->with('success_message', 'Le panier a bien été vidé !');
     }
 
-    public function destroy($product)
+    public function destroy(Request $product)
     {
-        Cart::remove($product);
+        //Cart::remove($product->rowId);
+        $test = Cart::content();
+        $test2 = $test->firstWhere('items', $product->id);
+        Cart::remove($test2->rowId);
+      
         return redirect()->back()->with('success_message', 'Le nugget a bien été supprimé du panier !');
     }
 

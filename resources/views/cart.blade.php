@@ -56,7 +56,7 @@
         <div class="container">
             <div class="row g-0 vh-lg-100">
                 <div class="col-12 col-lg-7 pt-5 pt-lg-10">
-                    <div class="pe-lg-5">
+                    <div class="pe-lg-5" style="overflow-y:scroll; height:80%;">
                         <!-- Logo-->
                         <a class="navbar-brand fw-bold fs-3 flex-shrink-0 mx-0 px-0" href="./index.html">
                             <div class="d-flex align-items-center">
@@ -110,12 +110,13 @@
                                     @endif
                                 </div>
                             </div>
-
+                            @foreach(Cart::content() as $item)
                             <div class="table-responsive">
+                               
                                 <table class="table align-middle">
+                                   
                                     <tbody class="border-0">
-
-                                        @foreach(Cart::content() as $item)
+                                      
                                             <!-- Cart Item-->
                                             <div class="row mx-0 py-4 g-0 border-bottom">
                                                 <div class="col-2 position-relative">
@@ -130,13 +131,13 @@
                                                         <h6 class="justify-content-between d-flex align-items-start mb-2">
                                                             {{ $item->name }}
                                                             
-                                                            <form ction="{{ route('cart.destroy', $item->rowId) }}" method="POST">
+                                                            <form action="{{ route('cart.destroy', $item->id) }}" method="POST">
                                                                 @csrf
-                                                                @method('DELETE')
+                                                               
                                                                 <button type="submit">X</button>
                                                             </form>
                                                         </h6>
-                                                        <span class="d-block text-muted fw-bolder text-uppercase fs-9">{{ $item->quantity }}</span>
+                                                        <span class="d-block text-muted fw-bolder text-uppercase fs-9">{{ $item->qty }}</span>
                                                     </div>
                                                     <p class="fw-bolder text-end text-muted m-0">{{$item->price}}</p>
                                                     <p class="fw-bolder text-end text-muted m-0">{{$item->image}}</p>
@@ -144,23 +145,28 @@
                                             </div>     
                                             <!-- / Cart Item-->
                                         
-
+                                            
                                     </tbody>
+                                    
                                 </table>
-                            </div>
-
+                            </div>   
+                            @endforeach
                         </div>
+                     
                     </div>
                 </div>
+              
+
                 <div class="col-12 col-lg-5 bg-light pt-lg-10 aside-checkout pb-5 pb-lg-0 my-5 my-lg-0">
                     <div class="p-4 py-lg-0 pe-lg-0 ps-lg-5">
                         <div class="pb-4 border-bottom">
                             <div class="d-flex flex-column flex-md-row justify-content-md-between mb-4 mb-md-2">
                                 <div>
                                     <p class="m-0 fw-bold fs-5">Total</p>
-                                    <span class="text-muted small">Taxes de transaction 50 Ξ ETH</span>
+                                    <span class="text-muted small">Taxes de transaction {{Cart::tax()}} Ξ ETH</span>
                                 </div>
-                                <p class="m-0 fs-5 fw-bold">50 Ξ ETH</p>
+                               
+                                <p class="m-0 fs-5 fw-bold"> {{Cart::subtotal()}} Ξ ETH</p>
                             </div>
                         </div>
                         <div class="py-4">
@@ -169,11 +175,14 @@
                                 <button class="btn btn-secondary btn-sm px-4">Appliquer</button>
                             </div>
                         </div>
-                        <a href="./checkout.html" class="btn btn-dark w-100 text-center" role="button">Finaliser la commande</a></div>
-                        @endforeach
+                        <a href="./checkout" class="btn btn-dark w-100 text-center" role="button">Finaliser la commande</a></div>
+                       
                 </div>
+              
             </div>
+         
         </div>
+        
         <!-- /Page Content -->
     </section>
     <!-- / Main Section-->
