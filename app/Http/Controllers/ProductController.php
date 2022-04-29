@@ -27,6 +27,13 @@ class ProductController extends Controller
        
     }
 
+    public function getProductImage() {
+        //$products =  DB::table('products')->paginate(2);
+        $products = Product::paginate(3);
+        return view('index', ['products' => $products]);
+       
+    }
+
     public function delete($id) {
         //$product =  DB::table('products')->where('id', '=', $id)->delete();
         $product = Product::findOrFail($id);

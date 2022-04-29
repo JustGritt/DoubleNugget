@@ -64,6 +64,8 @@
                             </div>
                         </a>
                         <!-- / Logo-->
+
+                        
                         <nav class="d-none d-md-block">
                             <ul class="list-unstyled d-flex justify-content-start mt-4 align-items-center fw-bolder small">
                                 <li class="me-4"><a class="nav-link-checkout active"
@@ -75,7 +77,8 @@
                                 <li><a class="nav-link-checkout nav-link-last "
                                         href="./checkout-payment.html">Payment</a></li>
                             </ul>
-                        </nav>                        <div class="mt-5">
+                        </nav> 
+                                               <div class="mt-5">
                             <h3 class="fs-5 fw-bolder mb-0 border-bottom pb-4">
 
                                 @if(Cart::count() > 0)
@@ -155,7 +158,7 @@
                      
                     </div>
                 </div>
-              
+
 
                 <div class="col-12 col-lg-5 bg-light pt-lg-10 aside-checkout pb-5 pb-lg-0 my-5 my-lg-0">
                     <div class="p-4 py-lg-0 pe-lg-0 ps-lg-5">
@@ -175,10 +178,13 @@
                                 <button class="btn btn-secondary btn-sm px-4">Appliquer</button>
                             </div>
                         </div>
-                        <a href="./checkout" class="btn btn-dark w-100 text-center" role="button">Finaliser la commande</a></div>
-                       
+                        <a href="./checkout" class="btn btn-dark w-100 text-center" role="button">Finaliser la commande</a>
+                        <a href="./" class="mt-2 btn btn-dark w-100 text-center" role="button">Retour au site</a>
+                    </div>
+                    
+                    
                 </div>
-              
+               
             </div>
          
         </div>

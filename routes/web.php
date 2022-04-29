@@ -23,6 +23,7 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 Route::get('/', function () {
     return view('index');
 });
+
 /*
 Route::get('/product', function () {
     return view('product');

@@ -74,7 +74,7 @@
 
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="./login2">
+                            <a class="nav-link text-body" href="./login">
                                 Mon compte
                             </a>
                         </li>
@@ -96,54 +96,57 @@
 
                                 <!-- Cart Items-->
                                 <div>
-                                    <!-- Cart Product-->
-                                    <div class="row mx-0 py-4 g-0 border-bottom">
-                                        <div class="col-2 position-relative">
-                                            <picture class="d-block ">
-                                                <img class="img-fluid" src="{{asset('images/products/Chicken/product-1.jpg')}}" alt="Product Nugget">
-                                            </picture>
-                                        </div>
-                                        <div class="col-9 offset-1">
-                                            <div>
-                                                <h6 class="justify-content-between d-flex align-items-start mb-2">
-                                                    Poule de Soie
-                                                    <i class="ri-close-line ms-3"></i>
-                                                </h6>
-                                                <span class="d-block text-muted fw-bolder text-uppercase fs-9">Taille: 9 / Quantité: 1</span>
-                                            </div>
-                                            <p class="fw-bolder text-end text-muted m-0">86.99 Ξ ETH</p>
-                                        </div>
-                                    </div>
-                                    <!-- Cart Product-->
-                                    <div class="row mx-0 py-4 g-0 border-bottom">
-                                        <div class="col-2 position-relative">
-                                            <picture class="d-block ">
-                                                <img class="img-fluid" src="{{asset('images/products/Chicken/product-2.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
-                                            </picture>
-                                        </div>
-                                        <div class="col-9 offset-1">
-                                            <div>
-                                                <h6 class="justify-content-between d-flex align-items-start mb-2">
-                                                    Coq Padoue
-                                                    <i class="ri-close-line ms-3"></i>
-                                                </h6>
-                                                <span class="d-block text-muted fw-bolder text-uppercase fs-9">Taille: 13 / Quantité: 1</span>
-                                            </div>
-                                            <p class="fw-bolder text-end text-muted m-0">126.99 Ξ ETH</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /Cart Items-->
-
+                                @foreach(Cart::content() as $item)
+                            <div class="table-responsive">
+                               
+                                <table class="table align-middle">
+                                   
+                                    <tbody class="border-0">
+                                      
+                                            <!-- Cart Item-->
+                                            <div class="row mx-0 py-4 g-0 border-bottom">
+                                                <div class="col-2 position-relative">
+                                                    <picture class="d-block border">
+                                                        <a href="#">
+                                                            <img class="img-fluid" src="{{asset('faker/').'/'. $item->name }}" alt="Image du produit">
+                                                        </a>
+                                                    </picture>
+                                                </div>
+                                                <div class="col-9 offset-1">
+                                                    <div>
+                                                        <h6 class="justify-content-between d-flex align-items-start mb-2">
+                                                            {{ $item->name }}
+                                                            
+                                                            <form action="{{ route('cart.destroy', $item->id) }}" method="POST">
+                                                                @csrf
+                                                               
+                                                                <button type="submit">X</button>
+                                                            </form>
+                                                        </h6>
+                                                        <span class="d-block text-muted fw-bolder text-uppercase fs-9">{{ $item->qty }}</span>
+                                                    </div>
+                                                    <p class="fw-bolder text-end text-muted m-0">{{$item->price}}</p>
+                                                    <p class="fw-bolder text-end text-muted m-0">{{$item->image}}</p>
+                                                </div>
+                                            </div>     
+                                            <!-- / Cart Item-->
+                                        
+                                            
+                                    </tbody>
+                                    
+                                </table>
+                            </div>   
+                            @endforeach
+                                 </div>
                                 <!-- Cart Summary-->
                                 <div>
                                     <div class="pt-3">
                                         <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-start mb-4 mb-md-2">
                                             <div>
                                                 <p class="m-0 fw-bold fs-5">Total</p>
-                                                <span class="text-muted small">Frais de transaction de  36.01 Ξ ETH</span>
+                                                <span class="text-muted small">Frais de transaction de  {{Cart::tax()}} Ξ ETH</span>
                                             </div>
-                                            <p class="m-0 fs-5 fw-bold">249.99 Ξ ETH</p>
+                                            <p class="m-0 fs-5 fw-bold">{{Cart::subtotal()}}Ξ ETH</p>
                                         </div>
                                     </div>
                                     <a href="./cart" class="btn btn-outline-dark w-100 text-center mt-4" role="button">Consulter le panier</a>
@@ -343,8 +346,8 @@
                                     <li><a class="dropdown-item" href="./product">Product</a></li>
                                     <li><a class="dropdown-item" href="./cart">Cart</a></li>
                                     <li><a class="dropdown-item" href="./checkout">Checkout</a></li>
-                                    <li><a class="dropdown-item" href="./login2">Login</a></li>
-                                    <li><a class="dropdown-item" href="./register2">Register</a></li>
+                                    <li><a class="dropdown-item" href="./login">Login</a></li>
+                                    <li><a class="dropdown-item" href="./register">Register</a></li>
                                     <li><a class="dropdown-item" href="./forgotten-password">Forgotten Password</a></li>
                                 </ul>
                             </li>
@@ -615,24 +618,24 @@
             <!-- Homepage Intro-->
             <div class="position-relative row my-lg-7 pt-5 pt-lg-0 g-8">
                 <div class="bg-text bottom-0 start-0 end-0" data-aos="fade-up">
-                    <h2 class="bg-text-title opacity-10"><span class="text-outline-dark">Old</span>Skool</h2>
+                    <h2 class="bg-text-title opacity-10"><span class="text-outline-dark">Wid</span>Zards</h2>
                 </div>
                 <div class="col-12 col-md-6 position-relative z-index-20 mb-7 mb-lg-0" data-aos="fade-right">
                     <p class="text-muted title-small">Welcome</p>
-                    <h3 class="display-3 fw-bold mb-5"><span class="text-outline-dark">OldSkool</span> - streetwear & footwear specialists</h3>
-                    <p class="lead">We are OldSkool, a leading supplier of global streetwear brands, including names such as <a href="./category">Stussy</a>, <a href="./category">Carhartt</a>, <a href="./category">Gramicci</a>, <a href="./category">Afends</a> and many more.</p>
+                    <h3 class="display-3 fw-bold mb-5"><span class="text-outline-dark">Wiwards Tech & ChickenCo </span> - Chicken & Sacrilegious dev specialists</h3>
+                    <p class="lead">We are Wizards, a leading supplier of global high quality Chicken, including names such as <a href="./category">Poule de Soie</a>, <a href="./category">Chabo</a>, <a href="./category">Tamago</a>, and many more.</p>
                     <p class="lead">With worldwide shipping and unbeatable prices - now's a great time to pick out something from our range.</p>
                     <a href="./category" class="btn btn-psuedo" role="button">Shop New Arrivals</a>
                 </div>
                 <div class="col-12 col-md-6 position-relative z-index-20 pe-0" data-aos="fade-left">
                     <picture class="w-50 d-block position-relative z-index-10 border border-white border-4 shadow-lg">
-                        <img class="img-fluid" src="{{asset('images/banners/banner-5.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                        <img class="img-fluid" src="{{asset('images/logos/Gael.jpeg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                     </picture>
                     <picture class="w-60 d-block me-8 mt-n10 shadow-lg border border-white border-4 position-relative z-index-20 ms-auto">
-                        <img class="img-fluid" src="{{asset('images/banners/banner-6.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                        <img class="img-fluid" src="{{asset('images/logos/wizardds.jpeg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                     </picture>
                     <picture class="w-50 d-block me-8 mt-n7 shadow-lg border border-white border-4 position-absolute top-0 end-0 z-index-0 ">
-                        <img class="img-fluid" src="{{asset('images/banners/banner-7.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                        <img class="img-fluid" src="{{asset('images/logos/Gael.jpeg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                     </picture>
                 </div>
             </div>
@@ -658,7 +661,7 @@
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="{{asset('images/banners/banner-8.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="w-100 rounded" src="{{asset('images/products/Chicken/product-2.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">The Jordan Delta 2</p>
@@ -669,7 +672,7 @@
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="{{asset('images/banners/banner-9.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="w-100 rounded" src="{{asset('images/products/Chicken/product-1.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">Latest Mens Shirts</p>
@@ -680,7 +683,7 @@
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="{{asset('images/banners/banner-10.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="w-100 rounded" src="{{asset('images/products/Chicken/product-2.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">KiiKii Osake Tees</p>
@@ -691,7 +694,7 @@
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="{{asset('images/banners/banner-11.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="w-100 rounded" src="{{asset('images/products/Chicken/product-1.jpg')}}" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">Multibuy Womens Shirts</p>
