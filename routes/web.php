@@ -18,18 +18,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-/*
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-*/
-
-/*
-Route::get('/category', function () {
-    return view('category');
-})->name('category');
-*/
-
 Route::get('/product', function () {
     return view('product');
 })->name('product');
@@ -43,15 +31,20 @@ Route::get('/login2', function () {
 })->name('login2');
 
 Route::get('/dashboard', [Usercontroller::class, 'getProductAndUser'])->middleware(['auth'])->name('dashboard');
-Route::get('/dashboard/{id}', [Usercontroller::class, 'deleteUsers'])->middleware(['auth'])->name('deleteUsers');
+//Route::get('/dashboard/{id}', [Usercontroller::class, 'deleteUsers'])->middleware(['auth'])->name('deleteUsers');
 
-Route::get('/category', [ProductController::class, 'getProduct'])->name('category');
+Route::get('/category', [ProductController::class, 'getProductforView'])->name('category');
 
 //Route::get('/test', [ProductController::class, 'getProduct'])->middleware(['auth'])->name('getproduct');
-Route::get('/test/{id}', [ProductController::class, 'delete'])->middleware(['auth'])->name('deleteproduct');
+//Route::get('/test/{id}', [ProductController::class, 'delete'])->middleware(['auth'])->name('deleteproduct');
 
-Route::get('/create-product', [ProductController::class, 'createProduct'])->middleware(['auth'])->name('createproduct');
+/*
+Route::get('/create-product', function () {
+    return view('create-product');
+})->middleware(['auth'])->name('createproduct');
 
+Route::post('/create-product', [ProductController::class, 'store'])->name('createproductstore');
+*/
 
 /*
 Route::get('/register2', function () {
@@ -62,5 +55,21 @@ Route::get('/register2', function () {
 Route::get('/cart', function () {
     return view('cart');
 })->name('cart');
+
+Route::group(['middleware' => 'auth'] , function() {
+    Route::group([
+        'prefix' => 'admin',
+        'middleware' => 'is_admin',
+        'as' => 'admin.'
+    ], function() {
+        Route::get('/users', [Usercontroller::class, 'getUsers'])->name('users');
+        Route::get('/dashboard/{id}', [Usercontroller::class, 'deleteUser'])->name('deleteUsers');
+        Route::get('/products/{id}', [ProductController::class, 'delete'])->name('deleteproduct');
+        Route::get('/create-product', function () { return view('create-product'); })->name('createproduct');
+
+        Route::post('/create-product', [ProductController::class, 'store'])->name('createproductstore');
+    });
+});
+
 
 require __DIR__.'/auth.php';
