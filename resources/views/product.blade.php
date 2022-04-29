@@ -1,47 +1,47 @@
 <head>
-  <!-- Page Meta Tags-->
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="keywords" content="">
+    <!-- Page Meta Tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
 
-  <!-- Custom Google Fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
-    rel="stylesheet">
+    <!-- Custom Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Roboto:wght@300;400;700&display=auto"
+        rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{asset('images/favicon/apple-touch-icon.png')}}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{asset('images/favicon/favicon-32x32.png')}}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon/favicon-16x16.png')}}">
-  <link rel="mask-icon" href="{{asset('images/favicon/safari-pinned-tab.svg')}}" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('images/favicon/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('images/favicon/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon/favicon-16x16.png')}}">
+    <link rel="mask-icon" href="{{asset('images/favicon/safari-pinned-tab.svg')}}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-  <!-- Vendor CSS -->
-  <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
-  <link rel="stylesheet" href="{{asset('css/libs.bundle.css')}}">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
+    <link rel="stylesheet" href="{{asset('css/libs.bundle.css')}}">
 
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{asset('css/theme.bundle.css')}}">
 
-  <!-- Fix for custom scrollbar if JS is disabled-->
-  <noscript>
-    <style>
-      /**
-          * Reinstate scrolling for non-JS clients
-          */
-      .simplebar-content-wrapper {
-        overflow: auto;
-      }
-    </style>
-  </noscript>
+    <!-- Fix for custom scrollbar if JS is disabled-->
+    <noscript>
+        <style>
+        /**
+            * Reinstate scrolling for non-JS clients
+            */
+        .simplebar-content-wrapper {
+            overflow: auto;
+        }
+        </style>
+    </noscript>
 
-  <!-- Page Title -->
-  <title>OldSkool | Bootstrap 5 HTML Template</title>
+    <!-- Page Title -->
+    <title>OldSkool | Bootstrap 5 HTML Template</title>
 
 </head>
 <body class="">
@@ -174,7 +174,7 @@
                                     <a href="./checkout" class="btn btn-dark w-100 text-center mt-2" role="button">Proceed To Checkout</a>
                                 </div>
                                 <!-- / Cart Summary-->
-                              </div>
+                            </div>
                             
     
                         </li>
@@ -190,217 +190,217 @@
                         <!-- Menu-->
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown dropdown position-static">
-                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Men
-                              </a>
-                                <!-- Menswear dropdown menu-->
-                                <div class="dropdown-menu dropdown-megamenu">
-                                  <div class="container-fluid">
-                                      <div class="row g-0 g-lg-3">
-                                          <!-- Menswear Dropdown Menu Links Section-->
-                                          <div class="col col-lg-8 py-lg-5">
-                                              <div class="row py-3 py-lg-0 flex-wrap gx-4 gy-6">
-                                                  <!-- menu row-->
-                                                  <div class="col">
-                                                      <h6 class="dropdown-heading">Coats & Jackets</h6>
-                                                      <ul class="list-unstyled">
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Waterproof Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Insulated Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Down Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Softshell Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Casual Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Windproof Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Breathable Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Cleaning & Proofing</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="./category">View All</a></li>
-                                                      </ul>
-                                                  </div>
-                                                  <!-- / menu row-->
-                                              
-                                                  <!-- menu row-->
-                                                  <div class="col">
-                                                      <h6 class="dropdown-heading">Insulated</h6>
-                                                      <ul class="list-unstyled">
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Insulated Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Bodywarmers</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Parkas</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Baselayers & Thermals</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Winter Hats</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Scarves & Neck</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Gloves & Mitts</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Accessories</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="./category">View All</a></li>
-                                                      </ul>
-                                                  </div>
-                                                  <!-- / menu row-->
-                                              
-                                                  <!-- menu row-->
-                                                  <div class="d-none d-xxl-block col">
-                                                      <h6 class="dropdown-heading">Footwear</h6>
-                                                      <ul class="list-unstyled">
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Lifestyle & Casual</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Walking Shoes</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Running Shoes</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Military Boots</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Fabric Walking Boots</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Leather Walking Boots</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Wellies</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Winter Footwear</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="./category.html">View All</a></li>
-                                                      </ul>
-                                                  </div>
-                                                  <!-- / menu row-->  
-                                                  
-                                                  <!-- menu row-->
-                                                  <div class="col">
-                                                      <h6 class="dropdown-heading text-danger">Special Offers</h6>
-                                                      <ul class="list-unstyled">
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Insulated Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Bodywarmers</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Parkas</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Baselayers & Thermals</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Winter Hats</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Scarves & Neck</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Gloves & Mitts</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Accessories</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger dropdown-link-all" href="./category.html">View All</a></li>
-                                                      </ul>
-                                                  </div>
-                                                  <!-- / menu row-->      
-                                              </div>
-                                              
-                                              <div class="align-items-center justify-content-between mt-5 d-none d-lg-flex">
-                                                  <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="./category.html">
-                                                          <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-1.svg" alt="">
-                                                          </picture>
-                                                      </a>
-                                                  </div>
-                                                  <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="./category.html">
-                                                          <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-2.svg" alt="">
-                                                          </picture>
-                                                      </a>
-                                                  </div>
-                                                  <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="./category.html">
-                                                          <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-3.svg" alt="">
-                                                          </picture>
-                                                      </a>
-                                                  </div>
-                                                  <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="./category.html">
-                                                          <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-4.svg" alt="">
-                                                          </picture>
-                                                      </a>
-                                                  </div>
-                                                  <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="./category.html">
-                                                          <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-5.svg" alt="">
-                                                          </picture>
-                                                      </a>
-                                                  </div>
-                                                  <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="./category.html">
-                                                          <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-6.svg" alt="">
-                                                          </picture>
-                                                      </a>
-                                                  </div>
-                                              </div>                  </div>
-                                          <!-- /Menswear Dropdown Menu Links Section-->
-                        
-                                          <!-- Menswear Dropdown Menu Images Section-->
-                                          <div class="col-lg-4 d-none d-lg-block">
-                                              <div class="vw-50 border-start h-100 position-absolute"></div>
-                                              <div class="py-lg-5 position-relative z-index-10 px-lg-4">
-                                                  <div class="row g-4">
-                                                      <div class="col-12 col-md-6">
-                                                          <div class="card justify-content-center d-flex align-items-center bg-transparent">
-                                                              <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-12.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
-                                                              </picture>
-                                                              <a class="fw-bolder link-cover" href="./category.html">Latest Arrivals</a>
-                                                          </div>
-                                                      </div>
-                                                      <div class="col-12 col-md-6">
-                                                          <div class="card justify-content-center d-flex align-items-center bg-transparent">
-                                                              <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-13.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
-                                                              </picture>
-                                                              <a class="fw-bolder link-cover" href="./category.html">Accessories</a>
-                                                          </div>
-                                                      </div>
-                                                      <div class="col-12 col-md-6">
-                                                          <div class="card justify-content-center d-flex align-items-center bg-transparent">
-                                                              <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-14.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
-                                                              </picture>
-                                                              <a class="fw-bolder link-cover" href="./category.html">T-Shirts</a>
-                                                          </div>
-                                                      </div>
-                                                      <div class="col-12 col-md-6">
-                                                          <div class="card justify-content-center d-flex align-items-center bg-transparent">
-                                                              <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-15.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
-                                                              </picture>
-                                                              <a class="fw-bolder link-cover" href="./category.html">Jackets</a>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                                  <a href="./category.html" class="btn btn-link p-0 fw-bolder text-link-border mt-5 text-dark mx-auto d-table">Visit Mens Section</a>
-                                              </div>
-                                          </div>
-                                          <!-- Menswear Dropdown Menu Images Section-->
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- / Menswear dropdown menu-->
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Men
+                            </a>
+                            <!-- Menswear dropdown menu-->
+                            <div class="dropdown-menu dropdown-megamenu">
+                                <div class="container-fluid">
+                                    <div class="row g-0 g-lg-3">
+                                        <!-- Menswear Dropdown Menu Links Section-->
+                                        <div class="col col-lg-8 py-lg-5">
+                                            <div class="row py-3 py-lg-0 flex-wrap gx-4 gy-6">
+                                                <!-- menu row-->
+                                                <div class="col">
+                                                    <h6 class="dropdown-heading">Coats & Jackets</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Waterproof Jackets</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Insulated Jackets</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Down Jackets</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Softshell Jackets</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Casual Jackets</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Windproof Jackets</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Breathable Jackets</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Cleaning & Proofing</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="./category">View All</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- / menu row-->
+                                            
+                                                <!-- menu row-->
+                                                <div class="col">
+                                                    <h6 class="dropdown-heading">Insulated</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Insulated Jackets</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Bodywarmers</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Parkas</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Baselayers & Thermals</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Winter Hats</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Scarves & Neck</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Gloves & Mitts</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category">Accessories</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="./category">View All</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- / menu row-->
+                                            
+                                                <!-- menu row-->
+                                                <div class="d-none d-xxl-block col">
+                                                    <h6 class="dropdown-heading">Footwear</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Lifestyle & Casual</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Walking Shoes</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Running Shoes</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Military Boots</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Fabric Walking Boots</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Leather Walking Boots</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Wellies</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item" href="./category.html">Winter Footwear</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="./category.html">View All</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- / menu row-->  
+                                                
+                                                <!-- menu row-->
+                                                <div class="col">
+                                                    <h6 class="dropdown-heading text-danger">Special Offers</h6>
+                                                    <ul class="list-unstyled">
+                                                        <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Insulated Jackets</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Bodywarmers</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Parkas</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Baselayers & Thermals</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Winter Hats</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Scarves & Neck</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Gloves & Mitts</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="./category.html">Accessories</a></li>
+                                                        <li class="dropdown-list-item"><a class="dropdown-item text-danger dropdown-link-all" href="./category.html">View All</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- / menu row-->      
+                                            </div>
+                                            
+                                            <div class="align-items-center justify-content-between mt-5 d-none d-lg-flex">
+                                                <div class="me-5 f-w-20">
+                                                    <a class="d-block" href="./category.html">
+                                                        <picture>
+                                                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-1.svg" alt="">
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="me-5 f-w-20">
+                                                    <a class="d-block" href="./category.html">
+                                                        <picture>
+                                                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-2.svg" alt="">
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="me-5 f-w-20">
+                                                    <a class="d-block" href="./category.html">
+                                                        <picture>
+                                                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-3.svg" alt="">
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="me-5 f-w-20">
+                                                    <a class="d-block" href="./category.html">
+                                                        <picture>
+                                                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-4.svg" alt="">
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="me-5 f-w-20">
+                                                    <a class="d-block" href="./category.html">
+                                                        <picture>
+                                                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-5.svg" alt="">
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="me-5 f-w-20">
+                                                    <a class="d-block" href="./category.html">
+                                                        <picture>
+                                                            <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-6.svg" alt="">
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                            </div>                  </div>
+                                        <!-- /Menswear Dropdown Menu Links Section-->
+                    
+                                        <!-- Menswear Dropdown Menu Images Section-->
+                                        <div class="col-lg-4 d-none d-lg-block">
+                                            <div class="vw-50 border-start h-100 position-absolute"></div>
+                                            <div class="py-lg-5 position-relative z-index-10 px-lg-4">
+                                                <div class="row g-4">
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="card justify-content-center d-flex align-items-center bg-transparent">
+                                                            <picture class="w-100 d-block mb-2 mx-auto">
+                                                                <img class="w-100 rounded" title="" src="./assets/images/banners/banner-12.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                            </picture>
+                                                            <a class="fw-bolder link-cover" href="./category.html">Latest Arrivals</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="card justify-content-center d-flex align-items-center bg-transparent">
+                                                            <picture class="w-100 d-block mb-2 mx-auto">
+                                                                <img class="w-100 rounded" title="" src="./assets/images/banners/banner-13.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                            </picture>
+                                                            <a class="fw-bolder link-cover" href="./category.html">Accessories</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="card justify-content-center d-flex align-items-center bg-transparent">
+                                                            <picture class="w-100 d-block mb-2 mx-auto">
+                                                                <img class="w-100 rounded" title="" src="./assets/images/banners/banner-14.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                            </picture>
+                                                            <a class="fw-bolder link-cover" href="./category.html">T-Shirts</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <div class="card justify-content-center d-flex align-items-center bg-transparent">
+                                                            <picture class="w-100 d-block mb-2 mx-auto">
+                                                                <img class="w-100 rounded" title="" src="./assets/images/banners/banner-15.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                            </picture>
+                                                            <a class="fw-bolder link-cover" href="./category.html">Jackets</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="./category.html" class="btn btn-link p-0 fw-bolder text-link-border mt-5 text-dark mx-auto d-table">Visit Mens Section</a>
+                                            </div>
+                                        </div>
+                                        <!-- Menswear Dropdown Menu Images Section-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / Menswear dropdown menu-->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Women
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./category.html">Tops</a></li>
+                                <li><a class="dropdown-item" href="./category.html">Bottoms</a></li>
+                                <li><a class="dropdown-item" href="./category.html">Jeans</a></li>
+                                <li><a class="dropdown-item" href="./category.html">T-Shirts</a></li>
+                                <li><a class="dropdown-item" href="./category.html">Shoes</a></li>
+                                <li><a class="dropdown-item" href="./category.html">Accessories</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./category.html" role="button">
+                                Kids
+                            </a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./category.html" role="button">
+                                Sale
+                            </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Women
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="./category.html">Tops</a></li>
-                                  <li><a class="dropdown-item" href="./category.html">Bottoms</a></li>
-                                  <li><a class="dropdown-item" href="./category.html">Jeans</a></li>
-                                  <li><a class="dropdown-item" href="./category.html">T-Shirts</a></li>
-                                  <li><a class="dropdown-item" href="./category.html">Shoes</a></li>
-                                  <li><a class="dropdown-item" href="./category.html">Accessories</a></li>
-                                </ul>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="./category.html" role="button">
-                                  Kids
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="./category.html" role="button">
-                                  Sale
-                                </a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Pages
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="./index.html">Homepage</a></li>
-                                  <li><a class="dropdown-item" href="./category.html">Category</a></li>
-                                  <li><a class="dropdown-item" href="./product.html">Product</a></li>
-                                  <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
-                                  <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
-                                  <li><a class="dropdown-item" href="./login.html">Login</a></li>
-                                  <li><a class="dropdown-item" href="./register.html">Register</a></li>
-                                  <li><a class="dropdown-item" href="./forgotten-password.html">Forgotten Password</a></li>
-                                </ul>
-                              </li>
-                          </ul>                    <!-- / Menu-->
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./index.html">Homepage</a></li>
+                                <li><a class="dropdown-item" href="./category.html">Category</a></li>
+                                <li><a class="dropdown-item" href="./product.html">Product</a></li>
+                                <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
+                                <li><a class="dropdown-item" href="./checkout.html">Checkout</a></li>
+                                <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="./register.html">Register</a></li>
+                                <li><a class="dropdown-item" href="./forgotten-password.html">Forgotten Password</a></li>
+                            </ul>
+                            </li>
+                        </ul>                    <!-- / Menu-->
     
                     </div>
                     <!-- / Main Navigation-->
@@ -420,9 +420,9 @@
             <div class="container-fluid">
                 <nav class="m-0" aria-label="breadcrumb">
                     <ol class="breadcrumb m-0">
-                      <li class="breadcrumb-item breadcrumb-light"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item breadcrumb-light"><a href="#">T-Shirts</a></li>
-                      <li class="breadcrumb-item  breadcrumb-light active" aria-current="page">Osaka Japan Mens T-Shirt</li>
+                        <li class="breadcrumb-item breadcrumb-light"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item breadcrumb-light"><a href="#">T-Shirts</a></li>
+                        <li class="breadcrumb-item  breadcrumb-light active" aria-current="page">Osaka Japan Mens T-Shirt</li>
                     </ol>
                 </nav>            </div>
         </div>
@@ -575,7 +575,14 @@
                                     </picture>
                                 </div>
                             </div>
-                            <button class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow">Add To Shopping Bag</button>
+                            
+                            <form action="{{ route('cart.store') }} method="POST">
+                                {{ csrf_field() }}
+                                <input type="hidden" name="id" value="{{ $product->id }}">
+                                <input type="hidden" name="name" value="{{ $product->name }}">
+                                <input type="hidden" name="price" value="{{ $product->price }}">
+                                <button type="submit" class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow">Add To Shopping Bag</button>
+                            </form>
                         
                             <!-- Product Highlights-->
                                 <div class="my-5">

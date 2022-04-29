@@ -3,6 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Usercontroller;
+
+// tmp
+use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\CartController;
+use Gloudemans\Shoppingcart\Facades\Cart;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,11 +52,22 @@ Route::get('/create-product', function () {
 Route::post('/create-product', [ProductController::class, 'store'])->name('createproductstore');
 */
 
-/*
-Route::get('/register2', function () {
-    return view('register');
-})->name('register2');
-*/
+
+// tmp rout
+Route::get('/tmp', [LandingPageController::class, 'index'])->name('tmp');
+
+// Cart routes
+Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
+Route::post('/cart', [CartController::class, 'store'])->name('cart.store');
+Route::delete('/cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
+
+Route::get('empty', function () {
+    Cart::destroy();
+});
+
+
+
+
 
 Route::get('/cart', function () {
     return view('cart');
